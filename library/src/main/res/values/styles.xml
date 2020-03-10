@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CommonTheme" parent="Theme.AppCompat.DayNight.NoActionBar" />
+
+    <!--activity无动画跳转-->
+    <style name="ActivityNoAnination" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+    </style>
+
+    <style name="TranslucentStatusTheme" parent="CommonTheme" />
+
+    <style name="LightStatusBarTheme" parent="CommonTheme" />
+
+    <style name="CommonDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="ToastCompatStyle" parent="@android:style/Animation.Toast">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="NavigationStyle" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:minWidth">@dimen/titlebar_navigation_minWidth</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <!--返回键风格-->
+    <style name="ToolbarNavigationButtonStyle" parent="NavigationStyle">
+        <item name="android:background">?attr/actionBarItemBackground</item>
+    </style>
+
+</resources>

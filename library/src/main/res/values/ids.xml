@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="android_status_bar" type="id" />
+    <item name="android_web_content" type="id" />
+    <item name="android_web_parent" type="id" />
+    <item name="android_webView" type="id" />
+    <item name="android_web_progress" type="id" />
+    <item name="android_web_error_content" type="id"/>
+</resources>

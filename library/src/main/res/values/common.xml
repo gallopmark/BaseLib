@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_dialog_horizontal_margin">40dp</dimen>
+    <dimen name="common_dialog_vertical_margin">50dp</dimen>
+
+    <color name="common_loading_dialog_bg">#cc000000</color>
+    <dimen name="common_loading_dialog_padding">20dp</dimen>
+    <dimen name="common_loading_dialog_radius">5dp</dimen>
+    <color name="common_loading_dialog_pv_color">#ccffffff</color>
+    <dimen name="common_loading_dialog_pv_thickness">3dp</dimen>
+    <dimen name="common_loading_dialog_pv_size">40dp</dimen>
+    <dimen name="common_loading_dialog_textSize">16sp</dimen>
+
+    <color name="col_common_toast_bg">#B0000000</color>
+    <color name="col_common_toast_stroke">#B0757575</color>
+    <color name="col_common_toast_textColor">#ffffffff</color>
+    <dimen name="bg_common_toast_corners">4dp</dimen>
+    <dimen name="bg_common_toast_stroke">1dp</dimen>
+    <dimen name="common_toast_left_right">16dp</dimen>
+    <dimen name="common_toast_top_bottom">10dp</dimen>
+    <dimen name="common_toast_textSize">16sp</dimen>
+
+    <dimen name="titlebar_coltrol_ripple_corners">20dp</dimen>
+    <dimen name="titlebar_navigation_minWidth">56dp</dimen>
+
+    <dimen name="web_progressbar_height">3dp</dimen>
+    <color name="col_web_progressbar_background">#ccffffff</color>
+    <color name="col_web_progressbar_progress">#cc007AFF</color>
+</resources>

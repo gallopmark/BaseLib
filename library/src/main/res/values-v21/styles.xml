@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TranslucentStatusTheme" parent="CommonTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="ToolbarNavigationButtonStyle" parent="NavigationStyle">
+        <item name="android:background">@drawable/titlebar_control_background_20dp</item>
+    </style>
+</resources>

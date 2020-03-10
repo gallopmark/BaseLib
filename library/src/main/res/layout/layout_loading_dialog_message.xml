@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_loading_message"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/common_toast_top_bottom"
+    android:textColor="@color/col_common_toast_textColor"
+    android:textSize="@dimen/common_toast_textSize"
+    android:visibility="gone" />
