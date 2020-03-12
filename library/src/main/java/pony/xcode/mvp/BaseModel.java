@@ -22,7 +22,6 @@ public abstract class BaseModel implements IModel {
         if (disposable != null) {
             if (mDisposables != null) {
                 mDisposables.remove(disposable);
-                mDisposables.clear();
             }
         }
     }
