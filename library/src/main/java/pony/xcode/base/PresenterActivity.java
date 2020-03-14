@@ -11,7 +11,7 @@ public abstract class PresenterActivity<P extends BasePresenter, V extends BaseV
 
     @SuppressWarnings("unchecked")
     @Override
-    void applyPresenter() {
+    protected void applyPresenter() {
         try {
             mPresenter = ((Class<P>) GenericsUtils.getGenericsSuperclassType(getClass())).newInstance();
             if (this instanceof BaseView) {

@@ -111,7 +111,7 @@ public abstract class CommonActivity extends AppCompatActivity {
         }
     }
 
-    void applyPresenter() {
+    protected void applyPresenter() {
 
     }
 
