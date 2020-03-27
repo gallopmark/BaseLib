@@ -9,6 +9,7 @@ import android.provider.Settings;
 import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.core.content.FileProvider;
 
@@ -16,28 +17,27 @@ import java.io.File;
 
 public class AppUtils {
 
-    /*版本更新 apk存放的目录  放到cacheDir文件夹6.0以下无法调起安装（出现解析错误，解析程序包时出现问题）*/
     @SuppressWarnings("ResultOfMethodCallIgnored")
+    @Nullable
     public static String getDefaultApkPath(Context context) {
-        File fileDir = context.getApplicationContext().getFilesDir();
-        String path;
+        File fileDir = context.getApplicationContext().getExternalCacheDir();
+        String path = null;
         if (fileDir != null) {
-            if (!fileDir.exists()) {
-                fileDir.mkdirs();
-            }
             path = fileDir.getAbsolutePath() + File.separator + "apk";
         } else {
-            fileDir = context.getApplicationContext().getCacheDir();
-            if (!fileDir.exists()) {
-                fileDir.mkdirs();
+            fileDir = context.getApplicationContext().getExternalFilesDir(null);
+            if (fileDir != null) {
+                path = fileDir.getAbsolutePath() + File.separator + "apk";
             }
-            path = context.getApplicationContext().getCacheDir() + File.separator + "apk";
         }
-        File file = new File(path);
-        if (!file.exists()) {
-            file.mkdirs();
+        if (path != null) {
+            File file = new File(path);
+            if (!file.exists()) {
+                file.mkdirs();
+            }
+            return file.getAbsolutePath();
         }
-        return file.getAbsolutePath();
+        return null;
     }
 
     public static void installApp(Context context, String apkPath) {
